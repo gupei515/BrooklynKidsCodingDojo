@@ -1,0 +1,72 @@
+<head>
+  <title>Paint</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="icon" type="favicon/x-icon" href="../images/favicon.ico">	
+  <meta charset="UTF-8">
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+  <h1>Paint</h1>
+  <div class="container">
+    
+    <div class="block">
+      <p>In this project, we’re going to make a Paint application, where you can draw, erase, and choose different colors to paint a picture.</p>
+			<iframe id="full" data-src="https://scratch.mit.edu/projects/embed/326666713/?autostart=false" allowfullscreen=""></iframe>
+    </div>
+    
+    <div class="block">
+      <p>1) Set up stage, with a picture you want to paint, and couple of color buttons to choose from.(In this example, we choose a picture of a cat, and five different color circle buttons on the palette)</p>
+			<button onclick="loadiframe('step1', this)">View Example</button>
+			<iframe id="step1" data-src="https://scratch.mit.edu/projects/embed/326547178/?autostart=false" src="about:blank"></iframe>
+    </div>
+    
+    <div class="block">
+      <p>2) Create a brush sprite, make the sprite move with cursor.</p>
+			<button onclick="loadiframe('step2', this)">View Example</button>
+			<iframe id="step2" data-src="https://scratch.mit.edu/projects/embed/326557396/?autostart=false" src="about:blank"></iframe>
+    </div>
+    
+    <div class="block">
+      <p>3) Create a color variable to record which color has been clicked</p>
+			<button onclick="loadiframe('step3', this)">View Example</button>
+			<iframe id="step3" data-src="https://scratch.mit.edu/projects/embed/326561513/?autostart=false" src="about:blank"></iframe>
+    </div>
+    
+    <div class="block">
+      <p>4) Switch brush costume when the color is clicked</p>
+			<button onclick="loadiframe('step4', this)">View Example</button>
+			<iframe id="step4" data-src="https://scratch.mit.edu/projects/embed/326625029/?autostart=false" src="about:blank"></iframe>
+    </div>
+    
+    <div class="block">
+      <p>5) Click the brush costume to start painting on the picture. </p>
+			<button onclick="loadiframe('step5', this)">View Example</button>
+			<iframe id="step5" data-src="https://scratch.mit.edu/projects/embed/326625946/?autostart=false" src="about:blank"></iframe>
+    </div>
+    
+    <div class="block">
+      <p>6) Create a clear all button to clear the screen up.</p>
+			<button onclick="loadiframe('step6', this)">View Example</button>
+			<iframe id="step6" data-src="https://scratch.mit.edu/projects/embed/326663936/?autostart=false" src="about:blank"></iframe>
+    </div>
+
+    <div class="block">
+      <p>7) Adding a slider variable to set the size of the brush.</p>
+			<button onclick="loadiframe('step7', this)">View Example</button>
+			<iframe id="step7" data-src="https://scratch.mit.edu/projects/embed/326666713/?autostart=false" src="about:blank"></iframe>
+    </div>
+ 
+  </div>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-86847686-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>

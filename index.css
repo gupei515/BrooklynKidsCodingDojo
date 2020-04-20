@@ -141,8 +141,14 @@ img {
 
 #tcs-text {
 	width: 300px;
-	font-size: 0.8rem;
+	font-size: 1.2rem;
 	line-height: 1.2rem;
+	color: pink;
+}
+
+#tcs-text a {
+	color: pink;
+	text-decoration: underline;
 }
 
 h4 {

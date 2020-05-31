@@ -1,0 +1,83 @@
+<head>
+    <title>Animate your name</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" type="favicon/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8">
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <h1>Little Musician</h1>
+    <div class="container">
+        <div class="block">
+            <p>In this project, we are going to learn how to use "Sounds" to play music and record sounds!</p>
+            <p>Click Abby to see what she has to say!</p>
+            <p>Press "m" button on the keyboard to play the drum.</p>
+            <p>Press "g" button on the keyboard to play the guitar.</p>
+            <iframe id="full" data-src="https://scratch.mit.edu/projects/embed/400759479/?autostart=false" allowfullscreen="" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>1) Set up the stage, set up background and add drum as a sprite.</p>
+            <p>When <img src="./images/scratch-command-snippet/green_flag.png" alt="alt text"> is clicked, Use <img src="./images/scratch-command-snippet/go-to.png" alt="alt text"> to put the drum into the place you want it to be.</p>
+            <button onclick="loadiframe('step1', this)">View Example</button>
+			<iframe id="step1" data-src="https://scratch.mit.edu/projects/embed/400591725/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>2)Use Event <img src="./images/scratch-command-snippet/when-key-pressed.png" alt="alt text">, click the arrow, change "space" key to "m".</p>
+            <p>When "m" key is pressed, go to "Sounds", <img src="./images/scratch-command-snippet/sounds.PNG" alt="alt text"> </p>
+            <p>As you can see under <img src="./images/scratch-command-snippet/sounds.PNG">, there is already some sounds related to the musical instrument sprits added into the sounds category.(Note to teacher: explain more here).</p>
+            <p>Lets play a drum sound by using <img src="./images/scratch-command-snippet/start-sound.PNG"></p>
+            <button onclick="loadiframe('step2', this)">View Example</button>
+			<iframe id="step2" data-src="https://scratch.mit.edu/projects/embed/400598994/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>3) Can you tell the difference between these two blocks? <img src="./images/scratch-command-snippet/start-sound.PNG"> vs <img src="./images/scratch-command-snippet/play-sound-until-done.PNG"></p>
+            <p>(Note to teachers: click each drum)which one uses "start sound" and which one uses "play sound until done"?</p>
+            <button onclick="loadiframe('step3', this)">View Example</button>
+			<iframe id="step3" data-src="https://scratch.mit.edu/projects/embed/400631158/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>4) Add a music sprite to the project, play a sequence of sounds, press "g" to start playing music on the keyboard.</p>
+            <button onclick="loadiframe('step4', this)">View Example</button>
+			<iframe id="step4" data-src="https://scratch.mit.edu/projects/embed/400641063/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>5) Let's use "Repeat" <img src="./images/scratch-command-snippet/repeat.PNG"> under "Control" category, to keep the guitar playing for "x" number of times.</p>
+            <p>Can you tell the difference between these two blocks? <img src="./images/scratch-command-snippet/repeat.PNG"> vs <img src="./images/scratch-command-snippet/forever.PNG"> </p>
+            <button onclick="loadiframe('step5', this)">View Example</button>
+			<iframe id="step5" data-src="https://scratch.mit.edu/projects/embed/400644900/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>6) This step we will create a background music that keeps playing.</p>
+            <p>By using <img src="./images/scratch-command-snippet/forever.PNG"> under <img src="./images/scratch-command-snippet/control-category.PNG"></p>
+            <p>Click on backdrop and we will put our code there.</p>
+            <button onclick="loadiframe('step6', this)">View Example</button>
+			<iframe id="step6" data-src="https://scratch.mit.edu/projects/embed/400756681/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>7) Animate guitar! The way to animate the sprits is to switch between costumes.</p>
+            <p>In this example, we have two costumes for the guitar. Use <img src="./images/scratch-command-snippet/next-costume.PNG"> after each note is played.</p>
+            <button onclick="loadiframe('step7', this)">View Example</button>
+			<iframe id="step7" data-src="https://scratch.mit.edu/projects/embed/400751441/?autostart=false" src="about:blank"></iframe>
+        </div>
+        <div class="block">
+            <p>8) Record sounds.</p>
+            <p>Click on Abby to see what she has to say!</p>
+            <p>Recording your sound by click <img src="./images/scratch-command-snippet/sounds-record-load-icon.PNG"></p>
+            <p>After recording, give a name to the sound track you just recorded.</p>
+            <button onclick="loadiframe('step8', this)">View Example</button>
+			<iframe id="step8" data-src="https://scratch.mit.edu/projects/embed/400759479/?autostart=false" src="about:blank"></iframe>
+        </div>
+    </div>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-86847686-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>

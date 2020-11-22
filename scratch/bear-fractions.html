@@ -1,0 +1,115 @@
+<head>
+    <title>Bear Fractions</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" type="favicon/x-icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <h1>Bear Fractions</h1>
+    <div class="container">
+        <div class="block">
+            <p>In this project, we're going to make a bee eating games, with a fancy tongue and fancy moving bees!</p> 
+            <button onclick="loadiframe('full', this)">View Example</button>       
+			<iframe id="full" data-src="https://scratch.mit.edu/projects/451326098/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>    
+        </div>
+        <div class="block">
+            <p>1) We need two sprites: one thing that eats and one thing that gets eaten. Pick out some cool ones. I did a bear and bees but a gecko and flies, or an adventurer (with a whip) and treasure could also be cool. Pick a backdrop too!</p>
+			<button onclick="loadiframe('step2', this)">View Example</button>
+			<iframe id="step2" data-src="https://scratch.mit.edu/projects/451288854/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>2) Give your eater sprite movement controls. We will use the mouse later, so it will be more comfortable to use w, a, s, and d rather than arrow keys.</p>
+			<button onclick="loadiframe('step3', this)">View Example</button>
+			<iframe id="step3" data-src="https://scratch.mit.edu/projects/451290018/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>3) This project is themed around learning the Pen tool! On the bottom left of your scratch page is a button with two block silhouettes and a plus symbol. Maybe you've never noticed it before? I wonder what it does....</p>
+            <p>Whoa, look! There are lots of other types of blocks we didn't know about! Let's pick "Pen" and learn about drawing.</p>
+            <p>Make a new blank sprite, and draw a single red dot in the center of the sprite. Rename the sprite to "Drawer." We are going to use this sprite to draw using the pen blocks. Experiment with the Pen blocks; figure out how to draw a line from the bottom left to the top right.</p>
+			<button onclick="loadiframe('step4', this)">View Example</button>
+			<iframe id="step4" data-src="https://scratch.mit.edu/projects/451290672/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>4) Make the line start from your eater's mouth. Your eater will move around in the final game, so make sure to make it dynamic.</p>
+			<button onclick="loadiframe('step5', this)">View Example</button>
+			<iframe id="step5" data-src="https://scratch.mit.edu/projects/451291538/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>5) Erase your line and redraw it constantly, so as to give the illusion of motion.</p>
+			<button onclick="loadiframe('step6', this)">View Example</button>
+			<iframe id="step6" data-src="https://scratch.mit.edu/projects/451292188/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>6) Now let's work on the other end of the line. Like the mouth, update it constantly to follow your mouse pointer.</p>
+			<button onclick="loadiframe('step7', this)">View Example</button>
+			<iframe id="step7" data-src="https://scratch.mit.edu/projects/451292832/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>7) Instead of teleporting to your mouse pointer, make the tip walk towards it when you click. Only erase once it reaches your mouse pointer. Wow, snakey! Weird! Prevent your eater from moving while the tongue is shooting out.</p>
+            <button onclick="loadiframe('step8', this)">View Example</button>
+            <iframe id="step8" data-src="https://scratch.mit.edu/projects/451293371/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>8) Alright, great! Now let's work on the eaten sprite. Make clones appear the on the right edge of the screen constantly.</p>
+            <button onclick="loadiframe('step9', this)">View Example</button>
+            <iframe id="step9" data-src="https://scratch.mit.edu/projects/451305134/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>9) Now make your eaten sprites travel to the left. Make them move all crazy-like. I used some fancy math but you can use anything you like. Maybe you make them zig-zag, or loop-de-loop, or wholly-hobble, or gimmy-gone, or jangle-walk. If you really want to copy my math for moving, you can highlight this invisible text:</p>
+            <p style="color:rgba(0,0,0,0)!important">
+                Point in Direction ((cos of (timer * 300)) * 50) - 90
+            </p>
+            <p style="color:rgba(0,0,0,0)!important">
+                Move 4 steps
+            </p>
+            <p>
+                Otherwise, also make them delete when they reach the left side.
+            </p>
+            <button onclick="loadiframe('step10', this)">View Example</button>
+            <iframe id="step10" data-src="https://scratch.mit.edu/projects/451305975/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>10) When your eaten sprites touch your tongue, get points and delete them. Also, you should set your drag mode to "not draggable." This will stop the player from being able to drag bees around on accident in the final version (You can still drag them in the editor, don't panic!). You can find this block in sensing.
+            </p>
+            <button onclick="loadiframe('step11', this)">View Example</button>
+            <iframe id="step11" data-src="https://scratch.mit.edu/projects/451323922/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>11) Add a timer to your game, so players will work hard to eat as many things as possible.
+            </p>
+            <button onclick="loadiframe('step12', this)">View Example</button>
+            <iframe id="step12" data-src="https://scratch.mit.edu/projects/451325215/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>12) Finally, add start and gameover screens to your game. Go ahead and add sound and music too, if you haven't already. Great job!
+            </p>
+            <button onclick="loadiframe('step13', this)">View Example</button>
+            <iframe id="step13" data-src="https://scratch.mit.edu/projects/451326098/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>Bonus) For an advanced challenge, make the tongue also retract, and suck in the bees, rather than just deleting them. Invisible hints below:
+            </p>
+            <p style="color:rgba(0,0,0,0)!important">
+                Hint #1: Try using Lists to track everywhere your tongue goes.
+            </p>
+            <p style="color:rgba(0,0,0,0)!important">
+                 Hint#2: If you use a "My Block;" you will get an option when making one to not screen refresh. This reduces how often your game needs to re-draw the whole screen and significantly reduces lag.
+            </p>
+            <button onclick="loadiframe('step14', this)">View Example</button>
+            <iframe id="step14" data-src="https://scratch.mit.edu/projects/451328920/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-86847686-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>

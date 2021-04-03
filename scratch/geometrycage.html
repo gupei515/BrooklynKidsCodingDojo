@@ -1,0 +1,119 @@
+<head>
+    <title>Geometry Cage</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="icon" type="favicon/x-icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <h1>Geometry Cage</h1>
+    <div class="container">
+        <div class="block">
+            <p>In this project, we're going to learn about video game physics!</p> 
+            <button onclick="loadiframe('full', this)">View Example</button>       
+			<iframe id="full" data-src="https://scratch.mit.edu/projects/509609598/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>    
+        </div>
+        <div class="block">
+            <p>1) First, let's make our character sprite. You don't have to copy mine, but it should be four colors, one on each side because we'll use that later.</p>
+			<button onclick="loadiframe('step2', this)">View Example</button>
+			<iframe id="step2" data-src="https://scratch.mit.edu/projects/509592802/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>2) And then let's make the rest of the sprites. These are less important, so make them look however you like. We need floors and walls (mine are red!), we need a turret (mine is yellow and purple!), we need a goal (mine is a blue crystal!), and we need bullets (mine is yellow!).</p>
+			<button onclick="loadiframe('step3', this)">View Example</button>
+			<iframe id="step3" data-src="https://scratch.mit.edu/projects/509593127/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>3) Okay, let's talk about <i>velocity</i>. Velocity is kind of like speed. The difference is that speed is always positive (how can you travel -45 mph?) while velocity can be negative. In our case, if we are talking about X, positive velocity is speed in the right direction and negative velocity is speed in the left direction. Confused yet? It's okay let's practice! Make an "x velocity" variable. Make it a slider and change the slider range to -10 to +10. Then make your hero sprite constantly change its x position by 'x velocity.' Move the slider around and watch what your character does. Experiment with different values. What does a positive 'x velocity' do? What does a negative 'x velocity' do? What does 0 'x velocity' do?</p> 
+			<button onclick="loadiframe('step4', this)">View Example</button>
+			<iframe id="step4" data-src="https://scratch.mit.edu/projects/509595089/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>4) Repeat for Y. What does a positive 'x velocity' do? What does a negative 'x velocity' do? What does 0 'x velocity' do?</p>
+			<button onclick="loadiframe('step5', this)">View Example</button>
+			<iframe id="step5" data-src="https://scratch.mit.edu/projects/509595816/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>5) You are currently constantly changing x and y by their velocities. Now, constantly change y velocity! Try different values, negative, positive, big, small. Using this, add gravity to your hero sprite. What kind of number would be best?</p>
+			<button onclick="loadiframe('step6', this)">View Example</button>
+			<iframe id="step6" data-src="https://scratch.mit.edu/projects/509596838/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>6) When you move into a platform, move back and stop moving. You can't go through solid floors, what's wrong with you!?</p>
+			<button onclick="loadiframe('step7', this)">View Example</button>
+			<iframe id="step7" data-src="https://scratch.mit.edu/projects/509598045/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>7) Use the colors on your hero sprite to keep from going through floors, walls, and ceilings. Hint: Use the colors to figure out which side is touching so you'll know which direction you need to send the hero back. </p>
+            <button onclick="loadiframe('step8', this)">View Example</button>
+            <iframe id="step8" data-src="https://scratch.mit.edu/projects/509599690/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>8) Add left and right keyboard controls to your hero sprite. Remember to work with velocity, not x or y position!</p>
+            <button onclick="loadiframe('step9', this)">View Example</button>
+            <iframe id="step9" data-src="https://scratch.mit.edu/projects/509600264/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>9) Prevent your character from getting faster than 5 steps per loop when pushing left or right.</p>
+            <button onclick="loadiframe('step10', this)">View Example</button>
+            <iframe id="step10" data-src="https://scratch.mit.edu/projects/509602555/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>10) Friction! Friction is what slows your character down when you let go of the buttons. Constantly halve your X velocity when you aren't pushing any buttons.</p>
+            <button onclick="loadiframe('step11', this)">View Example</button>
+            <iframe id="step11" data-src="https://scratch.mit.edu/projects/509603193/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>11) Create a 'jumps' variable. When you touch the ground, set it to 1. In previous projects, when you jumped, you changed y position right? Now for this project, I want jumping to change your y velocity instead. When you push the jump key, if you have any 'jumps,' jump!</p>
+            <button onclick="loadiframe('step12', this)">View Example</button>
+            <iframe id="step12" data-src="https://scratch.mit.edu/projects/509603974/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>12) Add a double jump or even triple jump. Hint: this should be really really simple! Make it so you can only jump once every 0.5 seconds.</p>
+            <button onclick="loadiframe('step13', this)">View Example</button>
+            <iframe id="step13" data-src="https://scratch.mit.edu/projects/509604615/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>13) We are finally finished with your character! Whew! Let's start on your turret. Make your turret constantly point at your hero sprite.</p>
+            <button onclick="loadiframe('step14', this)">View Example</button>
+            <iframe id="step14" data-src="https://scratch.mit.edu/projects/509605391/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>14) Every second, have your turrent create a clone of your bullet. The bullet should travel straight forward and delete 0.5 seconds after hitting the edge of the screen.</p>
+            <button onclick="loadiframe('step15', this)">View Example</button>
+            <iframe id="step15" data-src="https://scratch.mit.edu/projects/509606017/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>15) If a bullet hits your top, knock your hero down. If it hits the right side, knock it left. Left side, right. Bottom, up. Animate the explosion and delete the bullet afterwards.</p>
+            <button onclick="loadiframe('step16', this)">View Example</button>
+            <iframe id="step16" data-src="https://scratch.mit.edu/projects/509606698/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>16) Perfect! Last sprite. Add a goal for you to try and touch. When you touch it, go to the next level!</p>
+            <button onclick="loadiframe('step17', this)">View Example</button>
+            <iframe id="step17" data-src="https://scratch.mit.edu/projects/509607260/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>17) Add more levels!</p>
+            <button onclick="loadiframe('step18', this)">View Example</button>
+            <iframe id="step18" data-src="https://scratch.mit.edu/projects/509608482/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+        <div class="block">
+            <p>18) Finally, add a gameover screen for when the players win! You did it!</p>
+            <button onclick="loadiframe('step19', this)">View Example</button>
+            <iframe id="step19" data-src="https://scratch.mit.edu/projects/509609598/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-86847686-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
